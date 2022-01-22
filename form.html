@@ -5,45 +5,56 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Forms</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <img src="https://static.wixstatic.com/media/375882_2c48001b104b4c35ba0e8ffcc63f3b64~mv2.png/v1/fill/w_120,h_69,al
-            _c,lg_1,q_85/375882_2c48001b104b4c35ba0e8ffcc63f3b64~mv2.webp" alt="Logo">
-        </header>
-        <section class="main">
-            <fieldset>
-                <h1>Welcome to Mailchimp</h1>
-                <p>Create an account or <a href="">log in</a></p>
-                <form action="" method="post">
-                    <label for="email">
-                        Email
-                    </label>
-                    <input type="email" id="email" name="email">
-                    <label for="username">
-                        Username
-                    </label>
-                    <input type="text" id="username" name="username">
-                    <label for="password">
-                        Password
-                    </label>
-                    <input type="password" id="password" name="password">
-                    <label>
-                        <input type="checkbox" name="checkbox"> I don't want to receive <a href="">Promotional emails</a> from Mailchimp
-                    </label>
-                    <p>
-                        By creating an account, you agree to our <a>Terms</a> and
-                        have read and acknowledge the <a>Global Privacy Statement.</a>
-                    </p>
-                  <input type="submit" name="submit" value="Sign Up">
-                </form>
-            </fieldset>
-            <section class="sidebar">
+       <div class="main">
+           
+           <section class="form-header">
+
+                <header>
+                    <img src="images/logo.png" alt="Logo" class="logo">
+                </header>
+
+                <div class="form-div">
+
+                        <h1 class="form-header">Welcome to Mailchimp</h1>
+                        <p class="form-info">Create an account or <a href="">log in</a></p>
+
+                        <form action="" method="post">
+                            <label for="email" class="field-label">
+                                Email
+                            </label>
+                            <input type="email" id="email" name="email">
+                            <label for="username" class="field-label">
+                                Username
+                            </label>
+                            <input type="text" id="username" name="username">
+                            <label for="password" class="field-label">
+                                Password
+                            </label>
+                            <input type="password" id="password" name="password">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <label class="form-info" for="checkbox">
+                                I don't want to receive <a href="">Promotional emails</a> from Mailchimp
+                            </label>
+                            <p class="form-info">
+                                By creating an account, you agree to our <a href="">Terms</a> <br>
+                               and have read and acknowledge the <a href="">Global Privacy Statement.</a></p>
+                            </p>
+                        <input type="submit" name="submit" value="SIGN UP">
+                        </form>
+
+                </div>
 
             </section>
-        </section>
-        <footer>
 
-        </footer>
+            <section class="sidebar">
+                <div class="sidebar-div">
+                    <img src="images/flower.png" alt="flower">
+                </div>
+            </section>
+                    
+        </div>
     </body>
 </html>
